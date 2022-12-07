@@ -1,0 +1,74 @@
+:root{
+    --azul:#03045e;
+    --celeste:#caf0f8;
+    --degradado:linear-gradient(90deg,var(--celeste),var(--azul));
+}
+*::selection{
+background: var(--celeste);
+color: #fff;
+font-size: 62.4%;
+overflow: hidden;
+text-decoration: none;
+outline: none;
+border: none;
+text-transform: capitalize;
+}
+.body{
+background: #f9f9f9;
+}
+.Alogo{
+    font-size: 2rem;
+    color: #03045e;
+}
+.Abotones:hover{
+    color:#caf0f8;
+}
+.sectioninicio{
+display: flex;
+align-items: center;
+justify-content: center;
+background: url(../src/img/Fondoinicio.png) no-repeat;
+background-size: cover;
+background-position: center;
+}
+.imginicio
+{
+    width: 40vw;
+    animation: float 3s linear infinite;
+}
+@keyframes float {
+    0%,100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3rem);
+    }
+    
+}
+.Abotoninicio{
+    display: inline-block;
+   margin-top: 1rem;
+   padding: .8rem 3rem;
+   border-radius: 5rem;
+   background:var(--degradado) ;
+   color: #fff;
+   font-size: 1.8rem;
+   text-decoration: none;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+   transition: all .3s linear;
+}
+.Abotoninicio:hover{
+    transform: scale(1.1);
+}
+.cajacapsulas:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+ .Inputconsulta input:focus ~ label,
+ .Inputconsulta input:valid ~ label,
+ .Inputconsulta textarea:focus ~ label,
+ .Inputconsulta textarea:valid ~ label{
+top: -0.5rem;
+font-size: 1.5rem;
+color: #03045e;
+ }
